@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/Hauses', [HausController::class, 'index']);
+Route::post('/Hauses/search', [HausController::class, 'search']);

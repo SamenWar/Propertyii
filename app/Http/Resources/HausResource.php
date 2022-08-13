@@ -15,13 +15,14 @@ class HausResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'id'=> $this->id,
             'name'=>$this->name,
             'bathrooms'=>$this->bathrooms,
             'badrooms'=>$this->badrooms,
             'Storeys'=>$this->Storeys,
-            'Garage'=>$this->Garage,
+            'garage'=>$this->garage,
             'Prise'=>$this->Prise
-            
+
         ];
     }
 }

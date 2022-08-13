@@ -1,11 +1,7 @@
-require('./bootstrap');
-
-import Vue from 'vue';
-
-
-Vue.component('vue', require('./components/app').default);
+import { createApp } from 'vue'
+import App from './components/app'
+import axios from "axios";
 
 
-const app = new vue({
-    el:'#app'
-})
+
+createApp(App).mount('#app')
